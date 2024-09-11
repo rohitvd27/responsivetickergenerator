@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(48, 105, 188);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.container {
+  margin: 5vh 5vh 5vh 5vh;
+  width: 90%;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.left-section,
+.right-section {
+  width: 50%;
+
+  padding: 3rem;
+  overflow: auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.left-section {
+  flex: 27;
+  overflow: auto;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  border-right: 14px rgb(48, 105, 188) dotted;
+}
+
+/* .left-section img {
+  width: 40vw;
+  margin: 10px;
+  object-fit: contain;
+  height: 20vh;
+} */
+
+.vuname {
+  width: 100%;
+  object-fit: contain;
+  height: 20vh;
+}
+
+.vulogo {
+  width: 100%;
+  object-fit: contain;
+  height: 30vh;
+}
+
+.right-section {
+  flex: 73;
+  overflow: auto;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+}
+
+.collegecolorbar {
+  display: flex;
+  margin-top: 2px;
+  width: 60%;
+  height: 1vh;
+}
+
+.blue {
+  background-color: rgb(7, 59, 87);
+  flex: 1;
+}
+
+.orange {
+  background-color: rgb(240, 90, 43);
+  flex: 1;
+}
+
+.yellow {
+  background-color: rgb(226, 208, 31);
+  flex: 1;
+}
+
+/* ----------------------------- */
+
+.formstart {
+  margin-top: 20px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  flex: 0 0 100%;
+  margin-right: 0;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.checkbox-group input {
+  margin-right: 10px;
+}
+
+.checkbox-group label {
+  margin: 0;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  cursor: not-allowed;
+  opacity: 0.6;
+  transition: background-color 0.3s, cursor 0.3s;
+}
+
+.submit-btn.active {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.submit-btn.active:hover {
+  background-color: #0056b3;
+}
+
+.submit-btn.inactive:hover {
+  background-color: #dc3545;
+  cursor: not-allowed;
+}
+
+@media only screen and (max-width: 480px) {
+  * {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  .left-section {
+    border-bottom: 14px rgb(48, 105, 188) dotted;
+    border-right: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-section {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
